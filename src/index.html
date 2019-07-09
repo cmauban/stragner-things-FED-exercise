@@ -12,7 +12,7 @@
 
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/desktop.css">
-  <link rel="stylesheet" href="components/font-awesome-4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../components/font-awesome-4.6.3/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,800|Roboto+Slab:300,400,700" rel="stylesheet">
 
   <title>Stranger Things in RTP</title>
@@ -26,7 +26,7 @@
     </div>
   </header>
 
-  <main id="main" role="main">
+  <main id="main" role="main" ng-app="strangerThings" ng-controller="stController as st">
     <section id="banner">
       <div class="st-logo">
         <img src="images/stanger-things_raw.png">
@@ -37,16 +37,18 @@
         <a class="nav-item" href="#episodes">Episodes</a>
       </nav>
     </section>
-    <section id="main">
-    <section id="inspiration">
-      <h2>Inspiration</h2>
-    </section>
-    <section id="gallery">
-      <h2>Gallery</h2>
-    </section>
-    <section id="episodes">
-      <h2>Episodes</h2>
-    </section>
+    <section id="main-content">
+      <h2>{{items.heading}}</h2>
+      <section id="inspiration">
+        <h3>Inspiration</h3>
+        <p>{{items.heading}}</p>
+      </section>
+      <section id="gallery">
+        <h3>Gallery</h3>
+      </section>
+      <section id="episodes">
+        <h3>Episodes</h3>
+      </section>
   </section>
   </main>
 
@@ -54,8 +56,8 @@
 
   </footer>
 
-  <script src="angular/angular.js"></script>
-  <script src="src/js/main.js"></script>
+  <script src="../components/angular/angular.js"></script>
+  <script src="js/main.js"></script>
 
   </body>
 </html>
