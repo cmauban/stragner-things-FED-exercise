@@ -11,6 +11,7 @@
   <link rel="shortcut icon" type="image/png" href="">
 
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/desktop.css">
   <link rel="stylesheet" href="components/font-awesome-4.6.3/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,800|Roboto+Slab:300,400,700" rel="stylesheet">
 
@@ -21,18 +22,25 @@
 <body>
   <header>
     <div>
-      <h1><a href="/"></a></h1>
-      <nav id="main-nav" aria-label="Main Navigation" role="navigation">
-        <a class="nav-item" ng-show="loggedIn" href="#/home/user">tab 1</a>
-        <a class="nav-item" ng-hide="loggedIn" href="#/panel-login">tab 2</a>
-        <a class="nav-item" ng-hide="loggedIn" href="#/panel-signup">tab 3</a>
-        <a class="nav-item" ng-show="loggedIn" ng-click="logout()" href="">Logout</a>
-      </nav>
+      <h1><a href="/">cIMDb</a></h1>
     </div>
   </header>
 
-  <main id="main-content" ng-app="madlib" ng-controller="countController" role="main">
+  <main role="main">
+    <section id="banner">
+      <div class="st-logo">
+        <img src="images/stanger-things_raw.png">
+      </div>
+    </section>
+    <nav id="main-nav" aria-label="Main Navigation" role="navigation">
+      <a class="nav-item" ng-show="loggedIn" href="#/home/user">tab 1</a>
+      <a class="nav-item" ng-hide="loggedIn" href="#/panel-login">tab 2</a>
+      <a class="nav-item" ng-hide="loggedIn" href="#/panel-signup">tab 3</a>
+      <a class="nav-item" ng-show="loggedIn" ng-click="logout()" href="">Logout</a>
+    </nav>
+    <section id="main">
     <p>Hello world</p>
+  </section>
   </main>
 
   <footer>
