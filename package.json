@@ -1,0 +1,24 @@
+{
+  "name": "stragner-things-fed-exercise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "browser-sync": "^2.26.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --directory --startPath src/index.html --files='src/*.html, src/main.css'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmauban/stragner-things-FED-exercise.git"
+  },
+  "author": "Camille Mauban",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cmauban/stragner-things-FED-exercise/issues"
+  },
+  "homepage": "https://github.com/cmauban/stragner-things-FED-exercise#readme"
+}
