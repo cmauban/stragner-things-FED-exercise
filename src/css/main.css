@@ -1,0 +1,194 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body,
+td,
+th,
+p {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 16px;
+  color: #000;
+}
+
+body {
+  background-color: #fdfdfd;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+main {
+  max-width: 980px;
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+  color: #0680cd;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #001a57;
+  text-decoration: underline;
+}
+
+img, embed, object, video {
+  max-width: 100%;
+}
+
+nav a, button {
+  min-width: 48px;
+  min-height: 48px;
+}
+
+h1 {
+  font-family: 'Roboto Slab', serif;
+  color: #fff;
+  font-weight: 400;
+  font-size: 33px;
+}
+
+h2 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #262626;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 30px;
+}
+
+h3 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #6e6f71;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+h4 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #001a57;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+h5 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #98999b;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* ====================== Accessibility ====================== */
+
+label {
+  display: none;
+}
+
+.element-invisible {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px,1px,1px,1px);
+  overflow: hidden;
+  height: 1px;
+}
+
+
+/* ====================== Navigation ====================== */
+
+header {
+  width: 100%;
+  min-height: 56px;
+  text-align: center;
+}
+
+header div {
+  background-color: #eee;
+  padding: 1em;
+}
+
+header h1 {
+  margin: auto;
+}
+
+header h1 a {
+  color: #fff;
+  font-weight: 200;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+#breadcrumb {
+  padding: 10px 40px 16px;
+  list-style: none;
+  background-color: #eee;
+  font-size: 17px;
+  margin: 0;
+  /*width: calc(50% - 80px);*/
+  max-width: 100%;
+}
+
+/* Display list items side by side */
+#breadcrumb li {
+  display: inline;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+#breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+#breadcrumb li a {
+  color: #006cc9;
+}
+
+/* Add a color on mouse-over */
+#breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+
+
+/* ====================== DESKTOP ====================== */
+
+@media only screen and (min-width: 1024px) {
+
+  #footer {
+    font-size: 8pt;
+  }
+
+  article {
+    width: 30%;
+  }
+
+} /* END DESKTOP */
