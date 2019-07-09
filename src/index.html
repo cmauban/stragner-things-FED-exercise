@@ -26,20 +26,27 @@
     </div>
   </header>
 
-  <main role="main">
+  <main id="main" role="main">
     <section id="banner">
       <div class="st-logo">
         <img src="images/stanger-things_raw.png">
       </div>
+      <nav id="main-nav" aria-label="Main Navigation" role="navigation">
+        <a class="nav-item" href="#inspiration">Inspiration</a>
+        <a class="nav-item" href="#gallery">Gallery</a>
+        <a class="nav-item" href="#episodes">Episodes</a>
+      </nav>
     </section>
-    <nav id="main-nav" aria-label="Main Navigation" role="navigation">
-      <a class="nav-item" ng-show="loggedIn" href="#/home/user">tab 1</a>
-      <a class="nav-item" ng-hide="loggedIn" href="#/panel-login">tab 2</a>
-      <a class="nav-item" ng-hide="loggedIn" href="#/panel-signup">tab 3</a>
-      <a class="nav-item" ng-show="loggedIn" ng-click="logout()" href="">Logout</a>
-    </nav>
     <section id="main">
-    <p>Hello world</p>
+    <section id="inspiration">
+      <h2>Inspiration</h2>
+    </section>
+    <section id="gallery">
+      <h2>Gallery</h2>
+    </section>
+    <section id="episodes">
+      <h2>Episodes</h2>
+    </section>
   </section>
   </main>
 

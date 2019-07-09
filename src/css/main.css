@@ -21,10 +21,13 @@ body {
 }
 
 #main {
+  background: #eee;
+}
+
+#main-content {
   max-width: 980px;
   width: 90%;
   margin: 0 auto;
-  border: 1px solid #000;
 }
 
 .clearfix {
@@ -144,7 +147,16 @@ header h1 a {
 }
 
 #main-nav {
-  float: right;
+  position: absolute;
+  left: 0;
+  margin: 25px;
+}
+
+a.nav-item {
+  display: block;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  padding-top: 12px;
 }
 
 #banner {
