@@ -10,8 +10,7 @@
           $rootScope.items = response.data;
           /* check in console */
           console.log(response.data);
-          var english = response.data;
-          // items.locations.toString() = location
+          // var english = response.data;
         });
 
       /* get pig latin data */
@@ -19,16 +18,15 @@
         .then(function(response){
           $rootScope.plitems = response.data;
           console.log(response.data);
-          var pigLatin = response.data;
+
+          // var pigLatin = response.data;
         });
 
       // TODO: get translated content working.
       // reference: https://docs.angularjs.org/api/ng/directive/select
 
-      var selectedLang = this;
+      // var selectedLang = this;
 
     }); // end stController
 
 })(); // end iffy
-
-// Gallery

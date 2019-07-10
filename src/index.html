@@ -76,7 +76,7 @@
             <!-- <label class="dot" for="tab-1"></label> -->
             <ul class="carousel-content">
               <li>
-              <img class="slide1" src="{{items.gallery[0].src}}" alt=""/>
+              <img class="slide1" ng-src="{{items.gallery[0].src}}" alt=""/>
               <p class="flex-caption">{{items.gallery[0].text}}</p>
               <label class="arrow back" for="tab-2">&#8250;</label>
               <label class="arrow next" for="tab-4">&#8249;</label>
@@ -89,7 +89,7 @@
         <!-- <label class="dot" for="tab-2"></label> -->
         <ul class="carousel-content">
         <li>
-          <img src="{{items.gallery[1].src}}" alt=""/>
+          <img ng-src="{{items.gallery[1].src}}" alt=""/>
           <p class="flex-caption">{{items.gallery[1].text}}</p>
           <label class="arrow back" for="tab-3">&#8250;</label>
           <label class="arrow next" for="tab-1">&#8249;</label>
@@ -102,7 +102,7 @@
         <!-- <label class="dot" for="tab-3"></label> -->
         <ul class="carousel-content">
           <li>
-            <img src="{{items.gallery[2].src}}" alt=""/>
+            <img ng-src="{{items.gallery[2].src}}" alt=""/>
             <p class="flex-caption">{{items.gallery[2].text}}</p>
             <label class="arrow back" for="tab-4">&#8250;</label>
             <label class="arrow next" for="tab-2">&#8249;</label>
@@ -114,7 +114,7 @@
           <input class="carousel-toggle" id="tab-4" type="radio" name="toggle" />
           <!-- <label class="dot" for="tab-4"></label> -->
           <ul class="carousel-content">
-            <img src="{{items.gallery[3].src}}"alt="" />
+            <img ng-src="{{items.gallery[3].src}}"alt="" />
             <p class="flex-caption">{{items.gallery[3].text}}</p>
             <label class="arrow back" for="tab-1">&#8250;	</label>
             <label class="arrow next" for="tab-3">&#8249;</label>
@@ -130,6 +130,12 @@
       </section>
       <section id="episodes">
         <h3>Episodes</h3>
+        <div class="season">
+          <h4>Season 1</h4>
+            <ul>
+              <li>{{items["episode-list"][12].name}}</li>
+            </ul>
+        </div>
       </section>
   </section>
   </main>
