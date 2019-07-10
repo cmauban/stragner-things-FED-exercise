@@ -1,10 +1,20 @@
 /* ====================== DESKTOP ====================== */
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 896px) {
 
   #banner {
     background-repeat: repeat;
   }
+
+  .image-carousel .carousel-content img,
+  .image-carousel {
+    height: 400px;
+  }
+
+  .image-carousel .arrow {
+    line-height: 400px;
+  }
+
 
   #footer {
     font-size: 8pt;
