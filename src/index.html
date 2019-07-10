@@ -19,24 +19,24 @@
 
 </head>
 
-<body>
+<body ng-app="strangerThings" ng-controller="stController">
   <header>
     <div>
       <h1><a href="/">cIMDb</a></h1>
     <section class="lang clearfix">
-      <span class="dropdown">
-      <label for="lang"><span class="element-invisible">dropdown for language options</span></label>
-        <select id="lang" name="Language" ng-options="plitem.pl for plitem in plitem" title="translate content to pig latin">
+      <form class="dropdown" name="language">
+      <label for="lang"><span class="element-invisible">Select language:</span></label>
+        <select id="lang" name="Language" title="translate content to another language">
           <option selected disabled hidden>Language</option>
           <option>English</option>
           <option>Pig Latin</option>
         </select>
-      </span>
+      </form>
     </section>
     </div>
   </header>
 
-  <main id="main" role="main" ng-app="strangerThings" ng-controller="stController as st">
+  <main id="main" role="main" ng-app="strangerThings" ng-controller="stController">
     <section id="banner">
       <div class="st-logo">
         <img src="images/stanger-things_raw.png">
@@ -61,9 +61,72 @@
         <h3>Inspiration</h3>
         <p>{{items.snippets[2]}}</p>
         <p>Locations referenced in the show include: {{items.locations.toString()}}.</p>
+        <div>
+          <iframe class="video" width="560" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
       </section>
+
       <section id="gallery">
         <h3>Gallery</h3>
+
+        <!-- Slideshow -->
+        <ul class="image-carousel">
+          <li>
+            <input class="carousel-toggle" id="tab-1" type="radio" name="toggle" checked/>
+            <!-- <label class="dot" for="tab-1"></label> -->
+            <ul class="carousel-content">
+              <li>
+              <img class="slide1" src="{{items.gallery[0].src}}" alt=""/>
+              <p class="flex-caption">{{items.gallery[0].text}}</p>
+              <label class="arrow back" for="tab-2">&#8250;</label>
+              <label class="arrow next" for="tab-4">&#8249;</label>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+        <input class="carousel-toggle" id="tab-2" type="radio" name="toggle" />
+        <!-- <label class="dot" for="tab-2"></label> -->
+        <ul class="carousel-content">
+        <li>
+          <img src="{{items.gallery[1].src}}" alt=""/>
+          <p class="flex-caption">{{items.gallery[1].text}}</p>
+          <label class="arrow back" for="tab-3">&#8250;</label>
+          <label class="arrow next" for="tab-1">&#8249;</label>
+        </li>
+        </ul>
+        </li>
+
+        <li>
+        <input class="carousel-toggle" id="tab-3" type="radio" name="toggle" />
+        <!-- <label class="dot" for="tab-3"></label> -->
+        <ul class="carousel-content">
+          <li>
+            <img src="{{items.gallery[2].src}}" alt=""/>
+            <p class="flex-caption">{{items.gallery[2].text}}</p>
+            <label class="arrow back" for="tab-4">&#8250;</label>
+            <label class="arrow next" for="tab-2">&#8249;</label>
+          </li>
+        </ul>
+        </li>
+
+        <li>
+          <input class="carousel-toggle" id="tab-4" type="radio" name="toggle" />
+          <!-- <label class="dot" for="tab-4"></label> -->
+          <ul class="carousel-content">
+            <img src="{{items.gallery[3].src}}"alt="" />
+            <p class="flex-caption">{{items.gallery[3].text}}</p>
+            <label class="arrow back" for="tab-1">&#8250;	</label>
+            <label class="arrow next" for="tab-3">&#8249;</label>
+          </ul>
+          </li>
+
+        </ul>
+
+
+
+
+
       </section>
       <section id="episodes">
         <h3>Episodes</h3>
