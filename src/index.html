@@ -23,6 +23,16 @@
   <header>
     <div>
       <h1><a href="/">cIMDb</a></h1>
+    <section class="lang clearfix">
+      <span class="dropdown">
+      <label for="lang"><span class="element-invisible">dropdown for language options</span></label>
+        <select id="lang" name="Language" ng-options="plitem.pl for plitem in plitem" title="translate content to pig latin">
+          <option selected disabled hidden>Language</option>
+          <option>English</option>
+          <option>Pig Latin</option>
+        </select>
+      </span>
+    </section>
     </div>
   </header>
 
@@ -38,10 +48,19 @@
       </nav>
     </section>
     <section id="main-content">
-      <h2>{{items.heading}}</h2>
+      <p>{{items.snippets[1]}}</p>
+
+      <section class="section-hook">
+        <div class="line"></div>
+        <h2>{{items.heading}}</h2>
+        <p>{{items.description}}</p>
+        <div class="line"></div>
+      </section>
+
       <section id="inspiration">
         <h3>Inspiration</h3>
-        <p>{{items.heading}}</p>
+        <p>{{items.snippets[2]}}</p>
+        <p>Locations referenced in the show include: {{items.locations.toString()}}.</p>
       </section>
       <section id="gallery">
         <h3>Gallery</h3>

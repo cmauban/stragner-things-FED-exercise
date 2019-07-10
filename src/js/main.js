@@ -10,8 +10,10 @@
           $rootScope.items = response.data;
           /* check in console */
           console.log(response.data);
+
+          // items.locations.toString() = location
         });
 
-    }); // end countController
+    }); // end stController
 
 })(); // end iffy
