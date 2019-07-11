@@ -38,14 +38,13 @@ body {
 }
 
 a {
-  color: #0680cd;
+  color: #82d66b;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: #3a5fe5;
-  text-decoration: underline;
+  color: #82d66b;
 }
 
 img, embed, object, video {
@@ -196,6 +195,11 @@ a.nav-item {
   padding-top: 12px;
 }
 
+a.nav-item:hover {
+  color: #EB272E;
+  font-weight: 500;
+}
+
 #banner {
   height: 55vh;
   background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ), url(../images/hero.jpg);
@@ -242,7 +246,7 @@ select#lang {
 
 form.dropdown {
   background: #fff;
-  width: 100px;
+  width: 150px;
   height: 28px;
   display: inline-block;
   position: relative;
@@ -439,8 +443,18 @@ form.dropdown {
 footer {
   background: #000;
   padding: 20px;
-  min-height: 100px;
   margin: 0 auto;
   z-index: 9999;
   position: relative;
+  text-align: center;
+}
+
+footer a {
+  color: #666666;
+}
+
+footer img {
+  filter: grayscale(100%);
+  margin: 0 5px;
+  width: 20px;
 }
