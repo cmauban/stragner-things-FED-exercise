@@ -166,6 +166,10 @@ header h1 a {
   font-weight: 200;
 }
 
+header img {
+  filter: grayscale(100%);
+}
+
 #main-nav {
   position: absolute;
   left: 0;
@@ -369,6 +373,10 @@ form.dropdown {
   margin-bottom: 0;
   text-align: center;
   position: absolute;
+}
+
+#episodes {
+  width: 100%;
 }
 
 footer {
