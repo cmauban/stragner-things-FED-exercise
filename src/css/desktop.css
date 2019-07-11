@@ -36,10 +36,14 @@
 } /* END DESKTOP */
 
 /* ipad */
-@media (max-width:767px) and (min-width:580px)  {
+@media only screen and (min-width: 580px) {
 
-.section-hook .divider:before {
-  top: 82%;
-}
+  .section-hook .divider:before {
+    top: 82%;
+  }
+
+  header div {
+    padding: 1em 2em;
+  }
 
 }

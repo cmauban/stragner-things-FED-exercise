@@ -133,7 +133,7 @@ section {
 }
 
 .line:last-of-type {
-  margin-top: 35px;
+  margin-top: 45px;
 }
 
 .fa-star {
@@ -423,8 +423,13 @@ form.dropdown {
   position: absolute;
 }
 
+#inspiration {
+  margin: 45px 0;
+}
+
 #episodes {
   width: 100%;
+  margin-top: 15px;
 }
 
 #episodes ul {
