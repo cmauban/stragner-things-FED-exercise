@@ -246,7 +246,7 @@ select#lang {
 
 form.dropdown {
   background: #fff;
-  width: 150px;
+  width: 100px;
   height: 28px;
   display: inline-block;
   position: relative;
@@ -265,6 +265,31 @@ form.dropdown {
   top: 50%;
   right: 10px;
   margin-top: -3px;
+}
+
+.button-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 65px;
+}
+
+button.watch-now {
+  border: 3px solid #fff;
+  background: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 15px 20px;
+  font-family: 'Oswald', sans-serif;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+button.watch-now:hover {
+  background: #fff;
+  color: #000;
 }
 
 /* ====================== Sections ====================== */

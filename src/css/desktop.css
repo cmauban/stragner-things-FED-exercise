@@ -46,4 +46,12 @@
     padding: 1em 2em;
   }
 
+  form.dropdown {
+    width: 150px;
+  }
+
+  .button-container {
+    margin: 5% 15%;
+  }
+
 }
