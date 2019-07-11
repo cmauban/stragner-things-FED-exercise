@@ -52,12 +52,10 @@
       <p>{{items.snippets[1]}}</p>
 
       <section class="section-hook">
-        <!-- <div class="line"></div> -->
         <div class="divider">
           <h2>{{items.heading}}</h2>
         </div>
         <p>{{items.description}}</p>
-        <!-- <div class="line"></div> -->
       </section>
 
       <section id="inspiration">
@@ -72,7 +70,8 @@
 
       </section>
 
-      <section id="gallery">
+      <section id="gallery" class="section-hook">
+        <div class="line"></div>
         <h3>Gallery</h3>
 
         <!-- Slideshow -->
@@ -129,7 +128,7 @@
 
         </ul>
 
-
+      <div class="line"></div>
 
 
 
@@ -142,10 +141,27 @@
           <h4>Season 1</h4>
             <ul>
               <li>{{items["episode-list"][12].name}}<br>
-                Rating: <i class="fa fa-star" aria-hidden="true"></i> {{items["episode-list"][12].rating}}
-              </li>
+                Rating: {{items["episode-list"][12].rating}} <i class="fa fa-star" aria-hidden="true"></i></li>
               <li>{{items["episode-list"][14].name}}<br>
-                Rating: <i class="fa fa-star" aria-hidden="true"></i> {{items["episode-list"][14].rating}}
+                Rating: {{items["episode-list"][14].rating}} <i class="fa fa-star" aria-hidden="true"></i>
+              </li>
+              <li>{{items["episode-list"][6].name}}<br>
+                Rating: {{items["episode-list"][6].rating}} <i class="fa fa-star" aria-hidden="true"></i>
+              </li>
+              <li>{{items["episode-list"][7].name}}<br>
+                Rating: {{items["episode-list"][7].rating}} <i class="fa fa-star" aria-hidden="true"></i>
+              </li>
+              <li>{{items["episode-list"][11].name}}<br>
+                Rating: {{items["episode-list"][11].rating}} <i class="fa fa-star" aria-hidden="true"></i>
+              </li>
+              <li>{{items["episode-list"][8].name}}<br>
+                Rating: {{items["episode-list"][8].rating}} <i class="fa fa-star" aria-hidden="true"></i>
+              </li>
+              <li>{{items["episode-list"][4].name}}<br>
+                Rating: {{items["episode-list"][4].rating}} <i class="fa fa-star" aria-hidden="true"></i>
+              </li>
+              <li>{{items["episode-list"][2].name}}<br>
+                Rating: {{items["episode-list"][2].rating}} <i class="fa fa-star" aria-hidden="true"></i>
               </li>
 
             </ul>
@@ -155,10 +171,31 @@
           <h4>Season 2</h4>
             <ul>
               <li>{{items["episode-list"][15].name}}<br>
-                Rating: <i class="fa fa-star" aria-hidden="true"></i> {{items["episode-list"][15].rating}}
+                Rating: {{items["episode-list"][15].rating}} <i class="fa fa-star" aria-hidden="true"></i>
+              </li>
+              <li>{{items["episode-list"][13].name}}<br>
+                Rating: {{items["episode-list"][13].rating}} <i class="fa fa-star" aria-hidden="true"></i>
+              </li>
+              <li>{{items["episode-list"][10].name}}<br>
+                Rating: {{items["episode-list"][10].rating}} <i class="fa fa-star" aria-hidden="true"></i>
+              </li>
+              <li>{{items["episode-list"][9].name}}<br>
+                Rating: {{items["episode-list"][9].rating}} <i class="fa fa-star" aria-hidden="true"></i>
+              </li>
+              <li>{{items["episode-list"][5].name}}<br>
+                Rating: {{items["episode-list"][5].rating}} <i class="fa fa-star" aria-hidden="true"></i>
+              </li>
+              <li>{{items["episode-list"][3].name}}<br>
+                Rating: {{items["episode-list"][3].rating}} <i class="fa fa-star" aria-hidden="true"></i>
+              </li>
+              <li>{{items["episode-list"][16].name}}<br>
+                Rating: {{items["episode-list"][16].rating}} <i class="fa fa-star" aria-hidden="true"></i>
               </li>
               <li>{{items["episode-list"][1].name}}<br>
-                Rating: <i class="fa fa-star" aria-hidden="true"></i> {{items["episode-list"][13].rating}}
+                Rating: {{items["episode-list"][1].rating}} <i class="fa fa-star" aria-hidden="true"></i>
+              </li>
+              <li>{{items["episode-list"][0].name}}<br>
+                Rating: {{items["episode-list"][0].rating}} <i class="fa fa-star" aria-hidden="true"></i>
               </li>
 
             </ul>
