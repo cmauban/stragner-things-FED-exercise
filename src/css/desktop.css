@@ -6,6 +6,11 @@
     background-repeat: repeat;
   }
 
+  .st-logo,
+  #main-nav {
+    margin: 2% 10%;
+  }
+
   .section-hook .divider:before {
     top: 80%;
   }
