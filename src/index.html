@@ -16,17 +16,18 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,800|Roboto+Slab:300,400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600&display=swap" rel="stylesheet">
 
-  <title>Stranger Things in RTP</title>
+  <title>Stranger Things | The Ripe Kiwi</title>
 
 </head>
 
 <body ng-app="strangerThings" ng-controller="stController">
   <header>
     <div>
-      <h1><a href="/">the ripe<strong>kiwi</strong> &nbsp;<img src="images/kiwi.png"/></a></h1>
+      <h1><a href="/">the ripe<strong>kiwi</strong> &nbsp;<img src="images/kiwi.png" alt="kiwi logo"/></a></h1>
     <section class="lang clearfix">
       <form class="dropdown" name="language">
       <label for="lang"><span class="element-invisible">Select language:</span></label>
+        <!-- TODO: get this working -->
         <select id="lang" name="Language" title="translate content to another language">
           <option selected disabled hidden>Language</option>
           <option>English</option>
@@ -37,10 +38,10 @@
     </div>
   </header>
 
-  <main id="main" role="main" ng-app="strangerThings" ng-controller="stController as st">
+  <main id="main" role="main" ng-app="strangerThings" ng-controller="stController">
     <section id="banner">
       <div class="st-logo">
-        <img src="images/stanger-things_raw.png">
+        <img src="images/stanger-things_raw.png" alt="stranger things logo">
       </div>
       <nav id="main-nav" aria-label="Main Navigation" role="navigation">
         <a class="nav-item" href="#inspiration">Inspiration</a>
@@ -85,7 +86,7 @@
             <!-- <label class="dot" for="tab-1"></label> -->
             <ul class="carousel-content">
               <li>
-              <img class="slide1" ng-src="{{items.gallery[0].src}}" alt=""/>
+              <img class="slide1" ng-src="{{items.gallery[0].src}}" alt="man walking down the road"/>
               <p class="flex-caption">{{items.gallery[0].text}}</p>
               <label class="arrow back" for="tab-2">&#8250;</label>
               <label class="arrow next" for="tab-4">&#8249;</label>
@@ -98,7 +99,7 @@
         <!-- <label class="dot" for="tab-2"></label> -->
         <ul class="carousel-content">
         <li>
-          <img ng-src="{{items.gallery[1].src}}" alt=""/>
+          <img ng-src="{{items.gallery[1].src}}" alt="three boys in ghostbuster costumes"/>
           <p class="flex-caption">{{items.gallery[1].text}}</p>
           <label class="arrow back" for="tab-3">&#8250;</label>
           <label class="arrow next" for="tab-1">&#8249;</label>
@@ -111,7 +112,7 @@
         <!-- <label class="dot" for="tab-3"></label> -->
         <ul class="carousel-content">
           <li>
-            <img ng-src="{{items.gallery[2].src}}" alt=""/>
+            <img ng-src="{{items.gallery[2].src}}" alt="a family looking at drawings on the wall"/>
             <p class="flex-caption">{{items.gallery[2].text}}</p>
             <label class="arrow back" for="tab-4">&#8250;</label>
             <label class="arrow next" for="tab-2">&#8249;</label>
@@ -123,7 +124,7 @@
           <input class="carousel-toggle" id="tab-4" type="radio" name="toggle" />
           <!-- <label class="dot" for="tab-4"></label> -->
           <ul class="carousel-content">
-            <img ng-src="{{items.gallery[3].src}}"alt="" />
+            <img ng-src="{{items.gallery[3].src}}" alt="a map of Hawkins" />
             <p class="flex-caption">{{items.gallery[3].text}}</p>
             <label class="arrow back" for="tab-1">&#8250;	</label>
             <label class="arrow next" for="tab-3">&#8249;</label>
@@ -210,7 +211,7 @@
   </main>
 
   <footer>
-    <a href="/">the ripe<strong>kiwi</strong>&nbsp;<img src="images/kiwi.png"/>&nbsp;2019</a>
+    <a href="/">the ripe<strong>kiwi</strong>&nbsp;<img src="images/kiwi.png" alt="kiwi logo"/>&nbsp;2019</a>
   </footer>
 
   <script src="../components/angular/angular.js"></script>
