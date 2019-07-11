@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/desktop.css">
   <link rel="stylesheet" href="../components/font-awesome-4.6.3/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,800|Roboto+Slab:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600&display=swap" rel="stylesheet">
 
   <title>Stranger Things in RTP</title>
 
@@ -51,18 +52,24 @@
       <p>{{items.snippets[1]}}</p>
 
       <section class="section-hook">
-        <div class="line"></div>
-        <h2>{{items.heading}}</h2>
+        <!-- <div class="line"></div> -->
+        <div class="divider">
+          <h2>{{items.heading}}</h2>
+        </div>
         <p>{{items.description}}</p>
-        <div class="line"></div>
+        <!-- <div class="line"></div> -->
       </section>
 
       <section id="inspiration">
-        <h3>Inspiration</h3>
-        <p>{{items.snippets[2]}}</p>
-        <p>Locations referenced in the show include: {{items.locations.toString()}}.</p>
-        <!-- TODO: sanitize url to display video -->
-        <!-- <iframe class="video" width="560" src="{{items['video-embed']}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+        <div class="divider">
+          <h3>Inspiration</h3>
+        </div>
+          <p>{{items.snippets[2]}}</p>
+          <p>Locations referenced in the show include: {{items.locations.toString()}}.</p>
+
+          <!-- TODO: sanitize url to display video -->
+          <!-- <iframe class="video" width="560" src="{{items['video-embed']}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+
       </section>
 
       <section id="gallery">
@@ -128,7 +135,9 @@
 
       </section>
       <section id="episodes" class="clearfix">
-        <h3>Episodes</h3>
+        <div class="divider">
+          <h3>Episodes</h3>
+        </div>
         <div class="season">
           <h4>Season 1</h4>
             <ul>

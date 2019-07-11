@@ -57,25 +57,33 @@ nav a, button {
 }
 
 h1 {
-  font-family: 'impact', sans-serif;
+  font-family: 'Oswald', sans-serif;
   color: #fff;
   font-weight: 400;
   font-size: 33px;
 }
 
 h2 {
-  font-family: 'Open Sans', Arial, sans-serif;
-  color: #262626;
-  font-weight: 300;
-  font-size: 28px;
-  line-height: 30px;
+  font-family: 'Oswald', Arial, sans-serif;
+  color: #EB272E;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 40px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
 
 h3 {
-  font-family: 'Open Sans', Arial, sans-serif;
-  color: #6e6f71;
+  font-family: 'Oswald', Arial, sans-serif;
+  color: #EB272E;
   font-size: 22px;
   font-weight: 600;
+  z-index: 999;
+  position: relative;
+  text-align: left;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-left: 10px;
 }
 
 h4 {
@@ -244,7 +252,7 @@ form.dropdown {
   position: absolute;
   width: 0;
   border: 6px solid transparent;
-  border-top-color: #ff1515;
+  border-top-color: #EB272E;
   top: 50%;
   right: 10px;
   margin-top: -3px;
@@ -257,6 +265,32 @@ form.dropdown {
   padding: 30px;
 }
 
+.divider {
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.section-hook .divider {
+}
+
+.divider:before {
+  content: '';
+  position: absolute;
+  top: 33px;
+  bottom: 0;
+  left: 0;
+  border-top: 5px solid #000;
+  width: 30%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.section-hook .divider:before {
+  top: 88%;
+  border-top: 2px solid #eee;
+  width: 100%;
+}
 
 /* gallery */
 .image-carousel {

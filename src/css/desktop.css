@@ -1,9 +1,17 @@
 /* ====================== DESKTOP ====================== */
 
-@media only screen and (min-width: 896px) {
+@media only screen and (min-width: 768px) {
 
   #banner {
     background-repeat: repeat;
+  }
+
+  .section-hook .divider:before {
+    top: 80%;
+  }
+
+  .divider:before {
+    width: 20%;
   }
 
   .image-carousel .carousel-content img,
@@ -26,3 +34,12 @@
   }
 
 } /* END DESKTOP */
+
+/* ipad */
+@media (max-width:767px) and (min-width:580px)  {
+
+.section-hook .divider:before {
+  top: 82%;
+}
+
+}
