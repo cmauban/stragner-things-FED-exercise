@@ -47,6 +47,18 @@
     top: 82%;
   }
 
+  .section-hook {
+    text-align: center;
+    padding: 30px;
+    background: #e6e6e6;
+    margin: 30px;
+}
+
+  #gallery.section-hook {
+    padding: 30px;
+    background: #e6e6e6;
+  }
+
   header div {
     padding: 1em 2em;
   }

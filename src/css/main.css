@@ -294,9 +294,19 @@ button.watch-now:hover {
 
 /* ====================== Sections ====================== */
 
+.intro {
+  margin: 50px 0;
+}
+
 .section-hook {
   text-align: center;
   padding: 30px;
+  background: #e6e6e6;
+}
+
+#gallery.section-hook {
+  padding: 0;
+  background: none;
 }
 
 .divider {
@@ -322,8 +332,12 @@ button.watch-now:hover {
 
 .section-hook .divider:before {
   top: 88%;
-  border-top: 2px solid #eee;
+  border-top: 2px solid #e6e6e6;
   width: 100%;
+}
+
+.section-hook p {
+  font-weight: 400;
 }
 
 
