@@ -372,12 +372,15 @@ button.watch-now:hover {
   right: 0px;
   background: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent);
 }
+
 .image-carousel .arrow:hover {
   color: white;
 }
+
 .image-carousel li:nth-child(1) > .dot {
   margin-left: 44.6%;
 }
+
 .image-carousel .carousel-content {
   height: 0;
   overflow: hidden;
@@ -419,16 +422,20 @@ button.watch-now:hover {
 .image-carousel .dot:hover {
   background: #fff;
 }
+
 .image-carousel .carousel-toggle {
   display: none;
 }
+
 .image-carousel .carousel-toggle:checked + .dot {
   background: #fff;
 }
+
 .image-carousel .carousel-toggle:checked ~ .carousel-content {
   height: 100%;
   width: 100%;
 }
+
 .image-carousel .carousel-toggle:checked ~ .carousel-content img {
   opacity: 1;
 }

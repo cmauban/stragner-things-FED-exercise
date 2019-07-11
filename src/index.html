@@ -38,7 +38,7 @@
     </div>
   </header>
 
-  <main id="main" role="main" ng-app="strangerThings" ng-controller="stController">
+  <main id="main" role="main">
     <section id="banner">
       <div class="st-logo">
         <img src="images/stanger-things_raw.png" alt="stranger things logo">
@@ -87,7 +87,6 @@
         <ul class="image-carousel">
           <li>
             <input class="carousel-toggle" id="tab-1" type="radio" name="toggle" checked/>
-            <!-- <label class="dot" for="tab-1"></label> -->
             <ul class="carousel-content">
               <li>
               <img class="slide1" ng-src="{{items.gallery[0].src}}" alt="man walking down the road"/>
@@ -98,120 +97,113 @@
           </ul>
         </li>
 
-        <li>
-        <input class="carousel-toggle" id="tab-2" type="radio" name="toggle" />
-        <!-- <label class="dot" for="tab-2"></label> -->
-        <ul class="carousel-content">
-        <li>
-          <img ng-src="{{items.gallery[1].src}}" alt="three boys in ghostbuster costumes"/>
-          <p class="flex-caption">{{items.gallery[1].text}}</p>
-          <label class="arrow back" for="tab-3">&#8250;</label>
-          <label class="arrow next" for="tab-1">&#8249;</label>
-        </li>
-        </ul>
-        </li>
+          <li>
+            <input class="carousel-toggle" id="tab-2" type="radio" name="toggle" />
+            <ul class="carousel-content">
+            <li>
+              <img ng-src="{{items.gallery[1].src}}" alt="three boys in ghostbuster costumes"/>
+              <p class="flex-caption">{{items.gallery[1].text}}</p>
+              <label class="arrow back" for="tab-3">&#8250;</label>
+              <label class="arrow next" for="tab-1">&#8249;</label>
+            </li>
+            </ul>
+          </li>
 
         <li>
         <input class="carousel-toggle" id="tab-3" type="radio" name="toggle" />
-        <!-- <label class="dot" for="tab-3"></label> -->
-        <ul class="carousel-content">
-          <li>
-            <img ng-src="{{items.gallery[2].src}}" alt="a family looking at drawings on the wall"/>
-            <p class="flex-caption">{{items.gallery[2].text}}</p>
-            <label class="arrow back" for="tab-4">&#8250;</label>
-            <label class="arrow next" for="tab-2">&#8249;</label>
-          </li>
-        </ul>
+          <ul class="carousel-content">
+            <li>
+              <img ng-src="{{items.gallery[2].src}}" alt="a family looking at drawings on the wall"/>
+              <p class="flex-caption">{{items.gallery[2].text}}</p>
+              <label class="arrow back" for="tab-4">&#8250;</label>
+              <label class="arrow next" for="tab-2">&#8249;</label>
+            </li>
+          </ul>
         </li>
 
         <li>
           <input class="carousel-toggle" id="tab-4" type="radio" name="toggle" />
-          <!-- <label class="dot" for="tab-4"></label> -->
           <ul class="carousel-content">
             <img ng-src="{{items.gallery[3].src}}" alt="a map of Hawkins" />
             <p class="flex-caption">{{items.gallery[3].text}}</p>
             <label class="arrow back" for="tab-1">&#8250;	</label>
             <label class="arrow next" for="tab-3">&#8249;</label>
           </ul>
-          </li>
+        </li>
 
-        </ul>
+      </ul>
 
       <div class="line"></div>
+    </section>
 
+    <section id="episodes" class="clearfix">
+      <div class="divider">
+        <h3>Episodes</h3>
+      </div>
+      <div class="season">
+        <h4>Season 1</h4>
+          <ul>
+            <li>{{items["episode-list"][12].name}}<br>
+              Rating: {{items["episode-list"][12].rating}} <i class="fa fa-star" aria-hidden="true"></i></li>
+            <li>{{items["episode-list"][14].name}}<br>
+              Rating: {{items["episode-list"][14].rating}} <i class="fa fa-star" aria-hidden="true"></i>
+            </li>
+            <li>{{items["episode-list"][6].name}}<br>
+              Rating: {{items["episode-list"][6].rating}} <i class="fa fa-star" aria-hidden="true"></i>
+            </li>
+            <li>{{items["episode-list"][7].name}}<br>
+              Rating: {{items["episode-list"][7].rating}} <i class="fa fa-star" aria-hidden="true"></i>
+            </li>
+            <li>{{items["episode-list"][11].name}}<br>
+              Rating: {{items["episode-list"][11].rating}} <i class="fa fa-star" aria-hidden="true"></i>
+            </li>
+            <li>{{items["episode-list"][8].name}}<br>
+              Rating: {{items["episode-list"][8].rating}} <i class="fa fa-star" aria-hidden="true"></i>
+            </li>
+            <li>{{items["episode-list"][4].name}}<br>
+              Rating: {{items["episode-list"][4].rating}} <i class="fa fa-star" aria-hidden="true"></i>
+            </li>
+            <li>{{items["episode-list"][2].name}}<br>
+              Rating: {{items["episode-list"][2].rating}} <i class="fa fa-star" aria-hidden="true"></i>
+            </li>
+          </ul>
+      </div>
 
-
-      </section>
-      <section id="episodes" class="clearfix">
-        <div class="divider">
-          <h3>Episodes</h3>
-        </div>
-        <div class="season">
-          <h4>Season 1</h4>
-            <ul>
-              <li>{{items["episode-list"][12].name}}<br>
-                Rating: {{items["episode-list"][12].rating}} <i class="fa fa-star" aria-hidden="true"></i></li>
-              <li>{{items["episode-list"][14].name}}<br>
-                Rating: {{items["episode-list"][14].rating}} <i class="fa fa-star" aria-hidden="true"></i>
-              </li>
-              <li>{{items["episode-list"][6].name}}<br>
-                Rating: {{items["episode-list"][6].rating}} <i class="fa fa-star" aria-hidden="true"></i>
-              </li>
-              <li>{{items["episode-list"][7].name}}<br>
-                Rating: {{items["episode-list"][7].rating}} <i class="fa fa-star" aria-hidden="true"></i>
-              </li>
-              <li>{{items["episode-list"][11].name}}<br>
-                Rating: {{items["episode-list"][11].rating}} <i class="fa fa-star" aria-hidden="true"></i>
-              </li>
-              <li>{{items["episode-list"][8].name}}<br>
-                Rating: {{items["episode-list"][8].rating}} <i class="fa fa-star" aria-hidden="true"></i>
-              </li>
-              <li>{{items["episode-list"][4].name}}<br>
-                Rating: {{items["episode-list"][4].rating}} <i class="fa fa-star" aria-hidden="true"></i>
-              </li>
-              <li>{{items["episode-list"][2].name}}<br>
-                Rating: {{items["episode-list"][2].rating}} <i class="fa fa-star" aria-hidden="true"></i>
-              </li>
-
-            </ul>
-        </div>
-
-        <div class="season">
-          <h4>Season 2</h4>
-            <ul>
-              <li>{{items["episode-list"][15].name}}<br>
-                Rating: {{items["episode-list"][15].rating}} <i class="fa fa-star" aria-hidden="true"></i>
-              </li>
-              <li>{{items["episode-list"][13].name}}<br>
-                Rating: {{items["episode-list"][13].rating}} <i class="fa fa-star" aria-hidden="true"></i>
-              </li>
-              <li>{{items["episode-list"][10].name}}<br>
-                Rating: {{items["episode-list"][10].rating}} <i class="fa fa-star" aria-hidden="true"></i>
-              </li>
-              <li>{{items["episode-list"][9].name}}<br>
-                Rating: {{items["episode-list"][9].rating}} <i class="fa fa-star" aria-hidden="true"></i>
-              </li>
-              <li>{{items["episode-list"][5].name}}<br>
-                Rating: {{items["episode-list"][5].rating}} <i class="fa fa-star" aria-hidden="true"></i>
-              </li>
-              <li>{{items["episode-list"][3].name}}<br>
-                Rating: {{items["episode-list"][3].rating}} <i class="fa fa-star" aria-hidden="true"></i>
-              </li>
-              <li>{{items["episode-list"][16].name}}<br>
-                Rating: {{items["episode-list"][16].rating}} <i class="fa fa-star" aria-hidden="true"></i>
-              </li>
-              <li>{{items["episode-list"][1].name}}<br>
-                Rating: {{items["episode-list"][1].rating}} <i class="fa fa-star" aria-hidden="true"></i>
-              </li>
-              <li>{{items["episode-list"][0].name}}<br>
-                Rating: {{items["episode-list"][0].rating}} <i class="fa fa-star" aria-hidden="true"></i>
-              </li>
-
-            </ul>
+      <div class="season">
+        <h4>Season 2</h4>
+          <ul>
+            <li>{{items["episode-list"][15].name}}<br>
+              Rating: {{items["episode-list"][15].rating}} <i class="fa fa-star" aria-hidden="true"></i>
+            </li>
+            <li>{{items["episode-list"][13].name}}<br>
+              Rating: {{items["episode-list"][13].rating}} <i class="fa fa-star" aria-hidden="true"></i>
+            </li>
+            <li>{{items["episode-list"][10].name}}<br>
+              Rating: {{items["episode-list"][10].rating}} <i class="fa fa-star" aria-hidden="true"></i>
+            </li>
+            <li>{{items["episode-list"][9].name}}<br>
+              Rating: {{items["episode-list"][9].rating}} <i class="fa fa-star" aria-hidden="true"></i>
+            </li>
+            <li>{{items["episode-list"][5].name}}<br>
+              Rating: {{items["episode-list"][5].rating}} <i class="fa fa-star" aria-hidden="true"></i>
+            </li>
+            <li>{{items["episode-list"][3].name}}<br>
+              Rating: {{items["episode-list"][3].rating}} <i class="fa fa-star" aria-hidden="true"></i>
+            </li>
+            <li>{{items["episode-list"][16].name}}<br>
+              Rating: {{items["episode-list"][16].rating}} <i class="fa fa-star" aria-hidden="true"></i>
+            </li>
+            <li>{{items["episode-list"][1].name}}<br>
+              Rating: {{items["episode-list"][1].rating}} <i class="fa fa-star" aria-hidden="true"></i>
+            </li>
+            <li>{{items["episode-list"][0].name}}<br>
+              Rating: {{items["episode-list"][0].rating}} <i class="fa fa-star" aria-hidden="true"></i>
+            </li>
+          </ul>
         </div>
 
       </section>
-  </section>
+    </section>
   </main>
 
   <footer>
